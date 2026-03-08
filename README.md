@@ -4,6 +4,11 @@ Roselle Jewelry is a modern eCommerce platform designed to deliver a seamless an
 
 Built with a focus on performance, scalability, and user experience, Roselle Jewelry provides a smooth and responsive interface that makes browsing and purchasing jewelry simple and enjoyable.
 
+## Links
+
+- GitHub: <https://github.com/omk-rahi/roselle>
+- Live URL: <https://roselle-omkar.vercel.app/>
+
 ## Tech Stack
 
 - React 19 + TypeScript
