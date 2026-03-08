@@ -1,75 +1,53 @@
-# React + TypeScript + Vite
+# Roselle Jewelry | Elegant & Timeless Jewellery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Roselle Jewelry is a modern eCommerce platform designed to deliver a seamless and elegant jewelry shopping experience. The platform allows users to explore a curated collection of beautiful jewelry pieces, search products effortlessly, view detailed product information, and manage their shopping cart with ease.
 
-Currently, two official plugins are available:
+Built with a focus on performance, scalability, and user experience, Roselle Jewelry provides a smooth and responsive interface that makes browsing and purchasing jewelry simple and enjoyable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React 19 + TypeScript
+- Vite 7
+- React Router 7
+- Redux Toolkit
+- TanStack Query
+- Tailwind CSS 4
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Routes
 
-Note: This will impact Vite dev & build performances.
+- `/` Home
+- `/shop` Product listing
+- `/shop?q=<search-term>` Search results
+- `/product/:id` Product details
+- `/cart` Cart
+- `/profile` Profile
+- `/login` Login
+- `/register` Register
+- `*` Not found
 
-## Expanding the ESLint configuration
+## Data and State Notes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Product data is fetched from `DUMMYJSON API` (`/products/category/womens-jewellery` endpoints).
+- Cart data is stored in localStorage (`roselle-cart`).
+- Auth users are stored in localStorage (`roselle-users`).
+- Active auth session is stored in localStorage (`roselle-auth-session`) with a 5-minute expiry.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## TASKS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+[x] User Registration
+[x] User Login
+[x] Session Management
+[x] Dashboard
+[x] Product Listing
+[x] Product Detail
+[x] Cart Management
+[x] User Profile
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Bonus Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[x] Product search or filter
+[x] Toast notifications
+[x] Persist login on page refresh
+[x] Custom hooks for auth or cart
+[x] Dark mode support
+[ ] Infinite Product Scroll – Not implemented because the API currently contains only 3 jewellery products.
