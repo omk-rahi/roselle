@@ -34,20 +34,20 @@ Built with a focus on performance, scalability, and user experience, Roselle Jew
 
 ## TASKS
 
-[x] User Registration
-[x] User Login
-[x] Session Management
-[x] Dashboard
-[x] Product Listing
-[x] Product Detail
-[x] Cart Management
-[x] User Profile
+- [x] User Registration
+- [x] User Login
+- [x] Session Management
+- [x] Dashboard
+- [x] Product Listing
+- [x] Product Detail
+- [x] Cart Management
+- [x] User Profile
 
 ## Bonus Features
 
-[x] Product search or filter
-[x] Toast notifications
-[x] Persist login on page refresh
-[x] Custom hooks for auth or cart
-[x] Dark mode support
-[ ] Infinite Product Scroll – Not implemented because the API currently contains only 3 jewellery products.
+- [x] Product search or filter
+- [x] Toast notifications
+- [x] Persist login on page refresh
+- [x] Custom hooks for auth or cart
+- [x] Dark mode support
+- [ ] Infinite Product Scroll – Not implemented because the API currently contains only 3 jewellery products.
